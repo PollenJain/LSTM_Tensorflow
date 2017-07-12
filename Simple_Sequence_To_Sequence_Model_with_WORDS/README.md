@@ -4,5 +4,5 @@
 - Using frequency of each word to generate word to index dictionary (highest frequency means least index).
 - It is NOT a Language Translation ( Encoder-Decoder ) Model.
 
-## Link for [visual understanding] (https://medium.com/towards-data-science/lstm-by-example-using-tensorflow-feb0c1968537)
+## Link for [visual understanding](https://medium.com/towards-data-science/lstm-by-example-using-tensorflow-feb0c1968537).
 
