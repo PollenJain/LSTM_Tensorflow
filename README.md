@@ -1,4 +1,4 @@
-#Why LSTM over RNN?
+# Why LSTM over RNN?
 
 ### Drawbacks of RNN :
 
