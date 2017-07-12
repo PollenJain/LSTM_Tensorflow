@@ -13,7 +13,7 @@ or explode ( multiplication of many large values ).
 - Dire need to have some control over how past inputs are preserved.
 
 
-**How does RNN remember sequence information?**
+**How does RNN remember sequence information?** <br>
 All RNNs have feedback loops in the recurrent layer. This lets them maintain information in 'memory' over time.
 
 How does LSTM remember what RNN can not because of **vanishing gradients of the loss function**?
