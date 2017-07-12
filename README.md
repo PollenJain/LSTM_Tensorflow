@@ -16,7 +16,7 @@ or explode ( multiplication of many large values ).
 **How does RNN remember sequence information?** <br>
 All RNNs have feedback loops in the recurrent layer. This lets them maintain information in 'memory' over time.
 
-How does LSTM remember what RNN can not because of **vanishing gradients of the loss function**?
+<b>How does LSTM remember what RNN can not because of <i>vanishing gradients of the loss function</i>?</b>
 
 LSTMs are special..:P
 - Comes with **memory cell** that can maintain information in memory for long periods of time.
