@@ -27,7 +27,7 @@ LSTMs are special..:P
 		ii) how much of information is forgotten<br>
 		iii) and thus passing (information that entered the memory - information that 			    is forgotten) as output.<br>
 
-In order to innately and intuitively understand how information of the past can be passed look at the [following image](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)<br>
+In order to innately and intuitively understand how information of the past can be well understood from this [image](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)<br>
 ![alt-text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/hidden_layer_recurrence.png)
 
 
