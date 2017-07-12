@@ -5,7 +5,7 @@
 - It is **NOT** a Language Translation ( Encoder-Decoder ) Model.
 - Link for [visual understanding](https://medium.com/towards-data-science/lstm-by-example-using-tensorflow-feb0c1968537).
 
-### <u> How to use [LSTM-Tensorflow.ipynb](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/Simple_Sequence_To_Sequence_Model_with_WORDS/LSTM-Tensorflow.ipynb):</u>
+<h3><u> How to use [LSTM-Tensorflow.ipynb](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/Simple_Sequence_To_Sequence_Model_with_WORDS/LSTM-Tensorflow.ipynb):</u></h3>
 - The containing repository comes along with [*input_text.txt*](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/Simple_Sequence_To_Sequence_Model_with_WORDS/input_text.txt).<br>
 - *input_text.txt* is a regular file containing a list of sentences.<br>
 - *LSTM-Tensorflow.ipynb* by default runs taking input from *input_text.txt*.<br>
