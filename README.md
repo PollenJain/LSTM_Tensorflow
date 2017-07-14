@@ -82,8 +82,8 @@ cell state, c(t) = Forget Gate * c + input gate * input transform<br>
 	+<br>
 hidden state, h(t) = Output Gate * g(c(t)) = f(W2,b2,x,h) * g(c(t))<br>
 
-Cliched but True, *A picture is worth a thousand words.*
-![alt text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/mathematics_of_lstm.png)
+Cliched but True, *A picture is worth a thousand words.*<br>
+![alt text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/mathematics_of_lstm.png)<br><br>
 
 <u>Note</u> : The above mentioned LSTM in a Nut-Shell is explained [here](https://apaszke.github.io/lstm-explained.html).
 
