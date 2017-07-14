@@ -45,44 +45,44 @@ Input => Cell/Memory Unit => Output/State Update
 **Activation functions represented as :** f, g
 **Activation functions used are :** sigmoid, tanh
 
-**Basic facts about the activation function used:**
-**Sigmoid :** sigmoid(z) is always between 0 and 1 
-**tanh :** tanh(z) is always between -1 and 1
+**Basic facts about the activation function used:**<br>
+**Sigmoid :** sigmoid(z) is always between 0 and 1<br>
+**tanh :** tanh(z) is always between -1 and 1<br>
 
-**Dimensional Analysis:**
-f(W,b,x,h) => 
-	    x is a vector of shape (1,p)
-	    h is a vector of shape (1,q)
-	    W is a matrix of shape (p+q,m) => Since the actual input is x vector concatenated with h vector and thus of dimension (1, p+q)
-	    b is a matrix of shape (1,m) 
+**Dimensional Analysis:**<br>
+f(W,b,x,h) => <br>
+	    x is a vector of shape (1,p)<br>
+	    h is a vector of shape (1,q)<br>
+	    W is a matrix of shape (p+q,m) => Since the actual input is x vector concatenated with h vector and thus of dimension (1, p+q)<br>
+	    b is a matrix of shape (1,m)<br>
 	
-**Input :**
-xt concatenated with h(t-1) => Xt
-		+
-cell state, c(t-1) => Only LSTMs maintain a cell state (which also helps overcoming vanishing and exploding gradient problem). RNNs do not have any concept of Cell state.
+**Input :**<br>
+xt concatenated with h(t-1) => Xt<br>
+		+<br>
+cell state, c(t-1) => Only LSTMs maintain a cell state (which also helps overcoming vanishing and exploding gradient problem). RNNs do not have any concept of Cell state.<br>
 
 	  
 
-**Cell :**
- Gates => Gate : In general, function of (W,b,x,h) where the function is also referred to as activation.
-       	- Input Gate 
-		- f(W1,b1,x,h) 
-	- Output Gate
-		- f(W2,b2,x,h) 
-	- Forget Gate (not present in Vanilla LSTM)
-		- f(W3,b3,x,h)
-       Input Transform 
-		- g(W4,b4,x,h)
+**Cell :**<br>
+ Gates => Gate : In general, function of (W,b,x,h) where the function is also referred to as activation.<br>
+       	- Input Gate <br>
+		- f(W1,b1,x,h) <br>
+	- Output Gate <br>
+		- f(W2,b2,x,h) <br>
+	- Forget Gate (not present in Vanilla LSTM) <br>
+		- f(W3,b3,x,h) <br>
+       Input Transform <br>
+		- g(W4,b4,x,h)<br>
 	
 
-**Output :**
-cell state, c(t) = Forget Gate * c + input gate * input transform 
-(where * means elementwise multiplication between vectors, also called as Hadamard Product.)
-	+
-hidden state, h(t) = Output Gate * g(c(t)) = f(W2,b2,x,h) * g(c(t))
+**Output :**<br>
+cell state, c(t) = Forget Gate * c + input gate * input transform<br> 
+(where * means elementwise multiplication between vectors, also called as Hadamard Product.)<br>
+	+<br>
+hidden state, h(t) = Output Gate * g(c(t)) = f(W2,b2,x,h) * g(c(t))<br>
 
 Cliched but True, *A picture is worth a thousand words.*
-[!alt text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/mathematics_of_lstm.svg)
+![alt text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/mathematics_of_lstm.svg)
 
 <u>Note</u> : The above mentioned LSTM in a Nut-Shell is explained (here)[https://apaszke.github.io/lstm-explained.html].
 
