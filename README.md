@@ -64,7 +64,7 @@ cell state, c(t-1) => Only LSTMs maintain a cell state (which also helps overcom
 	  
 
 **Cell :**<br>
- Gates => Gate : In general, function of (W,b,x,h) where the function is also referred to as activation.<br>
+1. Gates => Gate : In general, function of (W,b,x,h) where the function is also referred to as activation.<br>
  - Input Gate <br>
 	- f(W1,b1,x,h) <br>
  - Output Gate <br>
@@ -72,7 +72,7 @@ cell state, c(t-1) => Only LSTMs maintain a cell state (which also helps overcom
  - Forget Gate (not present in Vanilla LSTM) <br>
 	- f(W3,b3,x,h) <br>
        
-**Input Transform:** <br>
+2. Input Transform:<br>
 	- g(W4,b4,x,h)<br>
 	
 
