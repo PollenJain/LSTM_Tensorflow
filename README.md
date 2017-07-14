@@ -33,7 +33,7 @@ To innately and intuitively understand how information of the past is passed acr
 
 ### LSTM in a Nut-shell
 
-**Workflow**
+**Workflow**<br>
 Input => Cell/Memory Unit => Output/State Update
 
 **Convention followed below:**
