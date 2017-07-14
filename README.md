@@ -57,7 +57,7 @@ f(W,b,x,h) => <br>
 	    b is a matrix of shape (1,m)<br>
 	
 **Input :**<br>
-xt concatenated with h(t-1) => Xt<br>
+x(t) concatenated with h(t-1) => Xt<br>
 		+<br>
 cell state, c(t-1) => Only LSTMs maintain a cell state (which also helps overcoming vanishing and exploding gradient problem). RNNs do not have any concept of Cell state.<br>
 
@@ -83,7 +83,7 @@ cell state, c(t) = Forget Gate * c + input gate * input transform<br>
 hidden state, h(t) = Output Gate * g(c(t)) = f(W2,b2,x,h) * g(c(t))<br>
 
 Cliched but True, *A picture is worth a thousand words.*
-![alt text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/mathematics_of_lstm.svg)
+![alt text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/mathematics_of_lstm.png)
 
 <u>Note</u> : The above mentioned LSTM in a Nut-Shell is explained [here](https://apaszke.github.io/lstm-explained.html).
 
