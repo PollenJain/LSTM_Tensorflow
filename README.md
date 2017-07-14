@@ -100,7 +100,7 @@ __Note__ : The above mentioned LSTM in a Nut-Shell is explained [here](https://a
 
 [Understanding Vanilla RNN.](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)<br>
 
-[Counting number of ones in bit-string using LSTM.](http://monik.in/a-noobs-guide-to-implementing-rnn-lstm-using-tensorflow/)<br>
+[Counting number of ones in a bit-string using LSTM.](http://monik.in/a-noobs-guide-to-implementing-rnn-lstm-using-tensorflow/)<br>
 
 [Numpy implementation of RNN.](https://gist.github.com/karpathy/d4dee566867f8291f086)<br>
 
