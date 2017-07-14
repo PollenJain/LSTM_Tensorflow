@@ -25,10 +25,75 @@ LSTMs are special..:P
 	- By controlling:<br>
 		i) how much of information enters the memory<br>
 		ii) how much of information is forgotten<br>
-		iii) and thus passing (information that entered the memory - information that 			    is forgotten) as output.<br>
+		iii) and thus passing (information that entered the memory - information that is forgotten) as output.<br>
 
-In order to innately and intuitively understand how information of the past can be well understood from this [image](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)<br>
+To innately and intuitively understand how information of the past is passed across the network in RNN/LSTM, look at this [image](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)<br>
 ![alt-text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/hidden_layer_recurrence.png)
+
+
+### LSTM in a Nut-shell
+
+**Workflow**
+Input => Cell/Memory Unit => Output/State Update
+
+**Convention followed below:**
+- x is same as x(t)
+- h is same as h(t-1)
+- c is same as c(t-1)
+
+
+**Activation functions represented as :** f, g
+**Activation functions used are :** sigmoid, tanh
+
+**Basic facts about the activation function used:**
+**Sigmoid :** sigmoid(z) is always between 0 and 1 
+**tanh :** tanh(z) is always between -1 and 1
+
+**Dimensional Analysis:**
+f(W,b,x,h) => 
+	    x is a vector of shape (1,p)
+	    h is a vector of shape (1,q)
+	    W is a matrix of shape (p+q,m) => Since the actual input is x vector concatenated with h vector and thus of dimension (1, p+q)
+	    b is a matrix of shape (1,m) 
+	
+**Input :**
+xt concatenated with h(t-1) => Xt
+		+
+cell state, c(t-1) => Only LSTMs maintain a cell state (which also helps overcoming vanishing and exploding gradient problem). RNNs do not have any concept of Cell state.
+
+	  
+
+**Cell :**
+ Gates => Gate : In general, function of (W,b,x,h) where the function is also referred to as activation.
+       	- Input Gate 
+		- f(W1,b1,x,h) 
+	- Output Gate
+		- f(W2,b2,x,h) 
+	- Forget Gate (not present in Vanilla LSTM)
+		- f(W3,b3,x,h)
+       Input Transform 
+		- g(W4,b4,x,h)
+	
+
+**Output :**
+cell state, c(t) = Forget Gate * c + input gate * input transform 
+(where * means elementwise multiplication between vectors, also called as Hadamard Product.)
+	+
+hidden state, h(t) = Output Gate * g(c(t)) = f(W2,b2,x,h) * g(c(t))
+
+Cliched but True, *A picture is worth a thousand words.*
+[!alt text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/mathematics_of_lstm.svg)
+
+<u>Note</u> : The above mentioned LSTM in a Nut-Shell is explained (here)[https://apaszke.github.io/lstm-explained.html].
+
+
+
+
+
+
+
+
+
 
 
 
