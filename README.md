@@ -28,8 +28,9 @@ LSTMs are special..:P
 		iii) and thus passing (information that entered the memory - information that is forgotten) as output.<br>
 
 To innately and intuitively understand how information of the past is passed across the network in RNN/LSTM, look at this [image](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)<br>
-![alt-text](https://github.com/PollenJain/LSTM_Tensorflow/blob/master/hidden_layer_recurrence.png)
-
+<p>
+	<img src="https://github.com/PollenJain/LSTM_Tensorflow/blob/master/hidden_layer_recurrence.png">
+</p>
 
 ### LSTM in a Nut-shell
 
