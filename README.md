@@ -42,8 +42,8 @@ Input => Cell/Memory Unit => Output/State Update
 - c is same as c(t-1)
 
 
-**Activation functions represented as :** f, g
-**Activation functions used are :** sigmoid, tanh
+**Activation functions represented as :** f, g<br>
+**Activation functions used are :** sigmoid, tanh<br>
 
 **Basic facts about the activation function used:**<br>
 **Sigmoid :** sigmoid(z) is always between 0 and 1<br>
