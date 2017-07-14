@@ -90,6 +90,30 @@ Cliched but True, *A picture is worth a thousand words.*<br>
 
 __Note__ : The above mentioned LSTM in a Nut-Shell is explained [here](https://apaszke.github.io/lstm-explained.html).
 
+**RNN and LSTM Reference Links :**
+
+[Basic understanding of encoder and decoder.](https://github.com/ematvey/tensorflow-seq2seq-tutorials/blob/master/1-seq2seq.ipynb)<br>
+
+[Visualizing information flow in RNN.](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)<br>
+
+[How LSTM is diiferent fom RNN?](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)<br>
+
+[Understanding Vanilla RNN.](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)<br>
+
+[Counting number of ones in bit-string using LSTM.](http://monik.in/a-noobs-guide-to-implementing-rnn-lstm-using-tensorflow/)<br>
+
+[Numpy implementation of RNN.](https://gist.github.com/karpathy/d4dee566867f8291f086)<br>
+
+[Understanding of sequence to sequence with and without attention.](https://indico.io/blog/sequence-modeling-neuralnets-part1/)<br>
+
+[Concept of padding and bucketing with attention in seq to seq.](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/)
+
+
+
+
+
+
+
 
 
 
