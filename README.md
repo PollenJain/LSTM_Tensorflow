@@ -94,7 +94,7 @@ __Note__ : The above mentioned LSTM in a Nut-Shell is explained [here](https://a
 
 [Basic understanding of encoder and decoder.](https://github.com/ematvey/tensorflow-seq2seq-tutorials/blob/master/1-seq2seq.ipynb)<br>
 
-[Visualizing information flow in RNN.](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)<br>
+[Visualising information flow in RNN.](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)<br>
 
 [How LSTM is diiferent fom RNN?](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)<br>
 
