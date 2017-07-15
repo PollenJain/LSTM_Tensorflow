@@ -12,7 +12,7 @@ or explode ( multiplication of many large values ).
 - RNNs have trouble in remembering values of past inputs after more than 10 timesteps approx.
 - Dire need to have some control over how past inputs are preserved.
 
-**People keep saying, "RNNs can't remember long-term dependencies". How the heck do I intutively understand what "long-term dependencies mean"?**<br>
+**People keep saying, "RNNs can't remember long-term dependencies". How the heck do I intutively understand what "long-term dependencies" mean ?**<br>
 Read "RNNs can't remember long-term dependencies" as "RNNs can't guess something (probably a word) for some reasons".
 
 - RNNs can do this :<br>
