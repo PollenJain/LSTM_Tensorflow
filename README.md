@@ -12,6 +12,36 @@ or explode ( multiplication of many large values ).
 - RNNs have trouble in remembering values of past inputs after more than 10 timesteps approx.
 - Dire need to have some control over how past inputs are preserved.
 
+**People keep saying RNNs can't remember long-term dependencies. How the heck do I intutively understand what >long-term dependencies mean?**
+Read "RNNs can't remember long-term dependencies" as "RNNs can't guess something (probably a word) for some reasons".
+
+- RNNs can do this :
+Lets be positive and first try to intutively understand what RNNs can remember :
+
+Given an incomplete sentence, "Roses are _______" to the RNN.
+RNN can guess that the appropriate word to fill the blank is "red". This sentence translates to, RNN can remember short-term dependencies ( jargon. Huh :P).
+Looking at the context (another jargon consistently used and which pesters me a lot), RNN guesses that the blank should be filled with something related to Roses.
+
+**Context ante/means?**
+In the incomplete sentence, "Roses are ________" 
+Context can be thought of as the understanding of this sentence at its most simplest form. 
+As in,
+Q. What are we talking about in this sentence? 
+Ans. We are talking about Roses.
+
+So RNN would remember that we are talking about Roses. So the blank must be filled with something pertaining to Roses.
+
+- RNNs fail to do this :
+Now lets try to understand what RNNs can't do.
+
+Given an incomplete sentence, "I am from Kerala. I speak _________ fluently".
+RNN can guess from the tone of second sentence that the blank must be filled with a language (Hindi? English? Kannada? Malayalam?).
+But what it fails to do is exactly figure out that before the sentence "I speak __________ fluently", context was that of Kerala and so blank can be most appropriately filled with Malayalam.
+This in difficult language means that RNN can remember short-term dependencies (or short-term context) but can't remember long-term dependencies (or long-term context).
+
+And this is exactly where LSTM does its magic. LSTMs can remember long-term dependencies.
+
+NOTE : remembering short/long term dependencies is synonymous with remembering information for short/long periods of time
 
 **How does RNN remember sequence information?** <br>
 All RNNs have feedback loops in the recurrent layer. This lets them maintain information in 'memory' over time.
