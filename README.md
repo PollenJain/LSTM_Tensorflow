@@ -28,7 +28,7 @@ In the incomplete sentence, "Roses are ________"
 Context can be thought of as the understanding of this sentence at its most simplest form.<br><br>
 As in,<br>
 What are we talking about in this sentence?<br>
-We are talking about Roses.<br><br>
+We are talking about Roses.<br>
 
 So RNN would remember that we are talking about Roses.<br> So the blank must be filled with something pertaining to Roses.<br>
 
