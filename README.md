@@ -16,8 +16,9 @@ or explode ( multiplication of many large values ).
 
 **1. RNNs can do this :**<br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given an incomplete sentence, "Roses are _______" to the RNN.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNN can guess that the appropriate word to fill the blank is "red".<br>This sentence translates to, RNN can remember short-term dependencies ( jargon. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Huh :P).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given an incomplete sentence, "Roses are _______" to the RNN.<br>.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNN can guess that the appropriate word to fill the blank is "red".<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This sentence translates to, RNN can remember short-term dependencies ( jargon. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Huh :P).<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Looking at the context (another jargon consistently used and which pesters me a lot), RNN guesses that the blank should be filled with something related &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to Roses.<br>
 
 **Context ante/means?**<br>
