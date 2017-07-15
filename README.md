@@ -16,10 +16,10 @@ or explode ( multiplication of many large values ).
 
 **1. RNNs can do this :**<br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given an incomplete sentence, "Roses are _______" to the RNN.<br>.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given an incomplete sentence, "Roses are _______" to the RNN.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNN can guess that the appropriate word to fill the blank is "red".<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This sentence translates to, RNN can remember short-term dependencies ( jargon. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Huh :P).<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Looking at the context (another jargon consistently used and which pesters me a lot), RNN guesses that the blank should be filled with something related &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to Roses.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Looking at the context (another jargon consistently used and which pesters me a lot), RNN guesses that the blank should be filled with something<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related to Roses.<br>
 
 **Context ante/means?**<br>
 In the incomplete sentence, "Roses are ________" 
@@ -33,7 +33,8 @@ So RNN would remember that we are talking about Roses.<br> So the blank must be 
 **2. RNNs fail to do this :**<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given an incomplete sentence, "I am from Kerala. I speak _________ fluently".<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNN can guess from the tone of second sentence that the blank must be filled with a language (Hindi? English? Kannada? Malayalam?).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNN can guess from the tone of second sentence that the blank must be filled with a language<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Hindi? English? Kannada? Malayalam?).<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But what it fails to do is exactly figure out that before the sentence "I speak __________ fluently", context was that of Kerala and so blank can be &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;most appropriately filled with Malayalam.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This in difficult language means that RNN can remember short-term dependencies (or short-term context) but can't remember long-term dependencies (or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long-term context).<br>
 
