@@ -12,13 +12,12 @@ or explode ( multiplication of many large values ).
 - RNNs have trouble in remembering values of past inputs after more than 10 timesteps approx.
 - Dire need to have some control over how past inputs are preserved.
 
-**People keep saying, "RNNs can't remember long-term dependencies". How the heck do I intutively understand what "long-term dependencies" mean ?**<br>
+**People keep saying, "RNNs can't remember long-term dependencies". How the heck do I intutively understand what "long-term dependencies" mean ?**<br><br>
 Read "RNNs can't remember long-term dependencies" as "RNNs can't guess something (probably a word) for some reasons".
 
 - RNNs can do this :<br>
 Lets be positive and first try to intutively understand what RNNs can remember :
-
-Given an incomplete sentence, "Roses are _______" to the RNN.
+Given an incomplete sentence, "Roses are _______" to the RNN.<br>
 RNN can guess that the appropriate word to fill the blank is "red".<br>This sentence translates to, RNN can remember short-term dependencies ( jargon. Huh :P).<br>
 Looking at the context (another jargon consistently used and which pesters me a lot), RNN guesses that the blank should be filled with something related to Roses.<br>
 
@@ -26,10 +25,10 @@ Looking at the context (another jargon consistently used and which pesters me a 
 In the incomplete sentence, "Roses are ________" 
 Context can be thought of as the understanding of this sentence at its most simplest form.<br>
 As in,<br>
-Q. What are we talking about in this sentence? 
-Ans. We are talking about Roses.
+Q. What are we talking about in this sentence?<br>
+Ans. We are talking about Roses.<br>
 
-So RNN would remember that we are talking about Roses. So the blank must be filled with something pertaining to Roses.<br>
+So RNN would remember that we are talking about Roses.<br> So the blank must be filled with something pertaining to Roses.<br>
 
 - RNNs fail to do this :<br>
 Now lets try to understand what RNNs can't do.<br>
