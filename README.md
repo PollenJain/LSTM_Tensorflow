@@ -15,7 +15,7 @@ or explode ( multiplication of many large values ).
 ### Intutively understand what "long-term dependencies" mean?<br>
 
 **1. RNNs can do this :**<br>
-Lets be positive and first try to intutively understand what RNNs can remember :
+
 Given an incomplete sentence, "Roses are _______" to the RNN.<br>
 RNN can guess that the appropriate word to fill the blank is "red".<br>This sentence translates to, RNN can remember short-term dependencies ( jargon. Huh :P).<br>
 Looking at the context (another jargon consistently used and which pesters me a lot), RNN guesses that the blank should be filled with something related to Roses.<br>
