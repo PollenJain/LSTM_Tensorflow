@@ -25,10 +25,10 @@ to Roses.<br>
 
 **Context ante/means?**<br>
 In the incomplete sentence, "Roses are ________" 
-Context can be thought of as the understanding of this sentence at its most simplest form.<br>
+Context can be thought of as the understanding of this sentence at its most simplest form.<br><br>
 As in,<br>
-Q. What are we talking about in this sentence?<br>
-Ans. We are talking about Roses.<br>
+What are we talking about in this sentence?<br>
+We are talking about Roses.<br><br>
 
 So RNN would remember that we are talking about Roses.<br> So the blank must be filled with something pertaining to Roses.<br>
 
@@ -38,7 +38,8 @@ So RNN would remember that we are talking about Roses.<br> So the blank must be 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNN can guess from the tone of second sentence that the blank must be filled with a language<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Hindi? English? Kannada? Malayalam?).<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But what it fails to do is exactly figure out that before the sentence "I speak __________ fluently",<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;context was that of Kerala and so blank can be most appropriately filled with Malayalam.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This in difficult language means that RNN can remember short-term dependencies (or short-term context) but can't remember long-term dependencies (or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long-term context).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This in difficult language means that RNN can remember short-term dependencies (or short-term context) but can't remember 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long-term dependencies (or long-term context).<br>
 
 And this is exactly where LSTM does its magic. LSTMs can remember long-term dependencies.<br>
 
