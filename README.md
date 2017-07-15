@@ -42,7 +42,7 @@ So RNN would remember that we are talking about Roses.<br> So the blank must be 
 
 And this is exactly where LSTM does its magic. LSTMs can remember long-term dependencies.<br>
 
-**NOTE :** remembering short/long term dependencies is synonymous with remembering information for short/long periods of time.<br>
+**NOTE :** Remembering short/long term dependencies is synonymous with remembering information for short/long periods of time.<br>
 
 **How does RNN remember sequence information?** <br>
 All RNNs have feedback loops in the recurrent layer. This lets them maintain information in 'memory' over time.
