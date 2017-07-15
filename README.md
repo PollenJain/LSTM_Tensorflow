@@ -12,10 +12,9 @@ or explode ( multiplication of many large values ).
 - RNNs have trouble in remembering values of past inputs after more than 10 timesteps approx.
 - Dire need to have some control over how past inputs are preserved.
 
-### Intutively understand what "long-term dependencies" mean?<br><br>
-Read "RNNs can't remember long-term dependencies" as "RNNs can't guess something (probably a word) for some reasons".
+### Intutively understand what "long-term dependencies" mean?<br>
 
-**RNNs can do this :**<br>
+**1. RNNs can do this :**<br>
 Lets be positive and first try to intutively understand what RNNs can remember :
 Given an incomplete sentence, "Roses are _______" to the RNN.<br>
 RNN can guess that the appropriate word to fill the blank is "red".<br>This sentence translates to, RNN can remember short-term dependencies ( jargon. Huh :P).<br>
@@ -30,7 +29,7 @@ Ans. We are talking about Roses.<br>
 
 So RNN would remember that we are talking about Roses.<br> So the blank must be filled with something pertaining to Roses.<br>
 
-**RNNs fail to do this :**<br>
+**2. RNNs fail to do this :**<br>
 Now lets try to understand what RNNs can't do.<br>
 
 Given an incomplete sentence, "I am from Kerala. I speak _________ fluently".<br>
