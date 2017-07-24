@@ -63,6 +63,9 @@ To innately and intuitively understand how information of the past is passed acr
 	<img src="https://github.com/PollenJain/LSTM_Tensorflow/blob/master/hidden_layer_recurrence.png">
 </p>
 
+**What does "memory" mean when talked in terms of time-series data?**<br>
+Rate of decay of statistical dependence between two points as we increase the distance between them.<br>
+
 ### LSTM in a Nut-shell
 
 **Workflow**<br>
