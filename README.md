@@ -107,6 +107,9 @@ cell state, c(t-1) => Only LSTMs maintain a cell state (which also helps overcom
  - Forget Gate (not present in Vanilla LSTM) <br>
 	- f(W3,b3,x,h) <br>
        
+In general, for a gate remember "Input times weight add a bias ACTIVATE".
+Note: f and g are ACTIVATION functions.
+
 2. Input Transform:<br>
 	- g(W4,b4,x,h)<br>
 	
